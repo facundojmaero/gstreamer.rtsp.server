@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-1.0
+
+Name: gst-rtsp-server
+Description: GStreamer based RTSP server
+Version: 1.14.5
+Requires: gstreamer-1.0 gstreamer-base-1.0
+Libs: -L${libdir} -lgstrtspserver-1.0
+Cflags: -I${includedir}

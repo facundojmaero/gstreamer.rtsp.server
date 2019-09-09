@@ -1,0 +1,12 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=@rtspserverlibdir@
+includedir=/home/facundo/Downloads/test/gst-rtsp-server-1.14.5
+
+Name: gst-rtsp-server
+Description: GStreamer based RTSP server
+Version: 1.14.5
+Requires: gstreamer-1.0 gstreamer-plugins-base-1.0
+Libs: -L${libdir} -lgstrtspserver-1.0
+Cflags: -I/home/facundo/Downloads/test/gst-rtsp-server-1.14.5 -I/home/facundo/Downloads/test/gst-rtsp-server-1.14.5
